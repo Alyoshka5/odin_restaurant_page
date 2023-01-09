@@ -1,3 +1,7 @@
+import food1ImgSrc from './steak.jpg';
+import food2ImgSrc from './lobster.jpg';
+import food3ImgSrc from './ice-cream.jpg';
+
 function loadMenu() {
     const content = document.createElement('div');
     
@@ -11,7 +15,7 @@ function loadMenu() {
     food1Name.textContent = "Steak";
     food1.appendChild(food1Name);
     const food1Image = new Image();
-    food1Image.src = '../src/steak.jpg';
+    food1Image.src = food1ImgSrc;
     food1Image.style = 'width: 40vw';
     food1.appendChild(food1Image);
     const food1Price = document.createElement('h3');
@@ -25,7 +29,7 @@ function loadMenu() {
     food2Name.textContent = "Lobster";
     food2.appendChild(food2Name);
     const food2Image = new Image();
-    food2Image.src = '../src/lobster.jpg';
+    food2Image.src = food2ImgSrc;
     food2Image.style = 'width: 40vw';
     food2.appendChild(food2Image);
     const food2Price = document.createElement('h3');
@@ -39,7 +43,7 @@ function loadMenu() {
     food3Name.textContent = "Ice Cream";
     food3.appendChild(food3Name);
     const food3Image = new Image();
-    food3Image.src = '../src/ice-cream.jpg';
+    food3Image.src = food3ImgSrc;
     food3Image.style = 'width: 40vw';
     food3.appendChild(food3Image);
     const food3Price = document.createElement('h3');

@@ -1,8 +1,10 @@
+import homeImgSrc from './restaurant.jpg';
+
 function loadHome() {
     const content = document.createElement('div');
 
     const homeImage = new Image();
-    homeImage.src = '../src/restaurant.jpg';
+    homeImage.src = homeImgSrc;
     homeImage.style = 'width: 60vw';
     content.appendChild(homeImage);
     

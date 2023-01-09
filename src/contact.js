@@ -1,3 +1,5 @@
+import contactImgSrc from './contact.jpg';
+
 function loadContact() {
     const content = document.createElement('div');
 
@@ -31,10 +33,10 @@ function loadContact() {
     person2.appendChild(email2);
     content.appendChild(person2);
 
-    const homeImage = new Image();
-    homeImage.src = '../src/contact.jpg';
-    homeImage.style = 'width: 60vw';
-    content.appendChild(homeImage);
+    const contactImage = new Image();
+    contactImage.src = contactImgSrc;
+    contactImage.style = 'width: 60vw';
+    content.appendChild(contactImage);
     
     document.body.appendChild(content);
 }
